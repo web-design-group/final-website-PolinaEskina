@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: #0B132A;
+    overflow-x: hidden;
+	font-family: 'MyFont', sans-serif;
+    font-weight: normal;
+}
+
+.background-image {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 324vh;
+    background-image: url('../img/буст1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px 0 1px;
+    position: relative;
+    z-index: 1;
+	box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+	margin-bottom: 120px;
+    gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 2.5vw;
+    width: auto;
+	display: block;
+}
+
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 3vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: 'MyFont1', sans-serif;
+    font-weight: normal;
+	font-size: 1.2vw;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.nav-link:hover {
+	border-bottom: 0.15vw solid #fff;
+}
+
+.nav-link:active {
+	border-bottom: none;
+    color: #C2C2C2;
+}
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 1.5vw;
+    margin-bottom: 100px;
+    line-height: 1.3;
+	text-align: left;
+	max-width: 70%;
+	margin-left: 0;
+	margin-right: auto;
+	font-weight: normal;
+}
+
+.hero h2 {
+	font-size: 2.5vw;
+	font-family: 'MyFont1', sans-serif;
+    font-weight: normal;
+    color: #6DFFE8;
+    margin-bottom: 40px;
+	text-align: center;
+}
+
+.search-section {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: 21vw;
+    border-radius: 5px;
+    padding: 0.15vw;
+    background-color: #237B9F;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1vw;
+    padding: 5px 10px;
+    outline: none;
+	font-family: 'MyFont', sans-serif;
+    font-weight: normal;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: white;
+    opacity: 1;
+	font-family: 'MyFont', sans-serif;
+    font-weight: normal;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-button img {
+    height: 2vw;
+    width: auto;
+}
+
+.search-button img:hover {
+    content: url('../img/стрелка1.png');
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 25vw, 380px), 1fr));
+    gap: 3vw;
+    margin: 4vw auto 0.5vw auto;
+}
+
+.card {
+    background-color: #1A2549;
+    border-radius: 0.8vw;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 0.8vw;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5vw;
+}
+
+.tags {
+    display: grid;
+    grid-auto-flow: column;
+	grid-auto-columns: max-content;
+    gap: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.tag {
+    background-color: #237B9F;
+    color: white;
+    padding: 0.4vw 1vw;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+
+.game-title {
+    font-size: 1.8vw;
+    margin-bottom: 0.5vw;
+    text-align: left;
+	font-weight: normal;
+}
+
+.price {
+    font-size: 1.4vw; 
+    margin-bottom: 1.5vw;
+    text-align: left;
+	font-weight: normal;
+}
+
+.buy-button-container {
+    width: 100%;
+    margin-top: 1vw;
+    padding: 0 0 1.5vw 0;
+    box-sizing: border-box;
+}
+
+.buy-button {
+    background-color: #6DFFE8;
+    color: black;
+    border: none;
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: block;
+	font-family: 'MyFont', sans-serif;
+	font-weight: normal;
+}
+
+.buy-button:hover {
+    background-color: white;
+}
+
+.site-footer {
+    padding-top: 3.5vw;
+    padding-bottom: 2vw;
+    color: white;
+    font-family: 'MyFont', sans-serif;
+}
+
+.footer-line {
+    width: 70%;
+    height: 0.1vw;
+    background-color: white;
+    margin: 0 auto 1.5vw auto;
+}
+
+.footer-main-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 60%;
+    margin: 0 auto 1vw auto;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.footer-contacts p {
+    margin: 0;
+    padding: 0.5em 0;
+	font-size: 1.3vw;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.5vw;
+	align-items: center;
+}
+
+.social-icon {
+    display: block;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: contain;
+    cursor: pointer;
+	flex-shrink: 0;
+}
+
+.social-telegram {
+    background-image: url('../img/тг.png');
+}
+
+.social-vk {
+    background-image: url('../img/вк.png');
+}
+
+.social-telegram:hover {
+    background-image: url('../img/тг1.png');
+}
+
+.social-vk:hover {
+    background-image: url('../img/вк1.png');
+}
+
+.footer-copyright {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 1.3vw;
+    padding-top: 0.5vw;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/ofont.ru_Audex.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont1';
+    src: url('../fonts/ofont.ru_Black Ops One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

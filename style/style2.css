@@ -1,0 +1,255 @@
+body {
+    background-color: #0B132A;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+	font-family: 'MyFont', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+	color: #fff;
+	transition: color 0.3s;
+}
+
+a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+a:active {
+    border-bottom: none;
+    color: #C2C2C2;
+}
+
+.social-icon:hover {
+    border-bottom: none;
+}
+
+a.text-decoration-none:hover {
+    border-bottom: none;
+}
+
+.main-content-wrapper {
+    width: 70vw;
+    max-width: 1200px; 
+    min-width: 320px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+.custom-navbar {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-navbar .navbar-brand .logo-img {
+    height: 30px;
+}
+
+.custom-navbar .nav-link {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+	font-family: 'MyFont1', sans-serif;
+    font-weight: normal;
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+
+.custom-navbar .navbar-nav .nav-item {
+    margin-left: 2rem;
+}
+
+.custom-navbar .navbar-nav .nav-item:first-child {
+    margin-left: 0;
+}
+
+.custom-navbar .nav-link:hover {
+    border-bottom: none;
+	text-decoration-line: underline;
+	text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    color: white;
+}
+
+.custom-navbar .nav-link:active {
+    text-decoration: none;
+    color: #C2C2C2;
+}
+
+.navbar-toggler-icon {
+	background-color: #6DFFE8;
+    border-radius: 5px;
+}
+
+.main-heading {
+	font-family: 'MyFont1', sans-serif;
+    font-weight: normal;
+    color: #6DFFE8;
+    font-size: 2rem;
+    margin-bottom: 4rem !important;
+}
+
+.flex-container-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.info-block,
+.form-block {
+    flex: 1 1 calc(50% - 24px / 2);
+    min-width: 300px;
+    box-sizing: border-box;
+	background-color: #1A2549;
+	border-radius: 15px;
+}
+
+.info-block p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.social-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon.telegram {
+    background-image: url('../img/тг.png');
+}
+.social-icon.telegram:hover {
+    background-image: url('../img/тг1.png');
+}
+
+.social-icon.vk {
+    background-image: url('../img/вк.png');
+}
+.social-icon.vk:hover {
+    background-image: url('../img/вк1.png');
+}
+
+.form-block {
+    background-color: #1A2549;
+    border-radius: 15px;
+}
+
+.form-heading {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.custom-input {
+    background-color: #237B9F;
+    border: 1px solid #237B9F;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+}
+
+.custom-input::placeholder {
+    color: white;
+}
+
+.custom-input:focus {
+    background-color: #237B9F;
+    border-color: #91DCFA; 
+    box-shadow: 0 0 0 0.25rem rgba(145, 220, 250, 0.25);
+    color: white;
+}
+
+textarea.custom-input {
+    min-height: 120px;
+}
+
+.custom-checkbox .form-check-input {
+    background-color: #1A2549; 
+    border-color: #6DFFE8;
+    margin-top: 0.25em;
+}
+
+.custom-checkbox .form-check-input:checked {
+    background-color: #6DFFE8;
+}
+
+.custom-checkbox .form-check-input:focus {
+    border-color: white;
+    box-shadow: 0 0 0 0.25rem rgba(145, 220, 250, 0.25);
+}
+
+.custom-checkbox .form-check-label {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.custom-submit-btn {
+    background-color: #6DFFE8;
+    border: none;
+    color: black;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+}
+
+.custom-submit-btn:hover {
+	background-color: white;
+    color: black;
+}
+
+.custom-footer {
+    background-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-line {
+    border-top: 2px solid white;
+	opacity: 1;
+}
+
+.footer-contact-info p {
+    color: white;
+}
+
+.footer-contact-info a {
+    color: white;
+}
+
+.copyright-text {
+    color: white;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/ofont.ru_Audex.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont1';
+    src: url('../fonts/ofont.ru_Black Ops One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
